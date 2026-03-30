@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_siso_project,siso.project,model_siso_project,,1,0,0,0
+access_siso_skill,siso.skill,model_siso_skill,,1,0,0,0

@@ -1,0 +1,28 @@
+<odoo>
+  <template id="siso_testimonial_page" inherit_id="siso_portfolio.siso_base_layout">
+    <xpath expr="//main" position="replace">
+      <t t-call="siso_portfolio.page_header">
+        <t t-set="title">Testimonial</t>
+        <t t-set="breadcrumbs">
+          <t t-raw="[
+            {'name':'Home','url':'/'},
+            {'name':'Pages','url':'#'},
+            {'name':'Testimonial','url':None}
+          ]"/>
+        </t>
+      </t>
+
+      <div class="container-xxl py-5">
+        <div class="text-center mb-5">
+          <h6 class="text-secondary text-uppercase">Testimonial</h6>
+          <h1>Our Clients Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+          <t t-foreach="testimonials" t-as="testimonial">
+            <t t-call="siso_portfolio.testimonial_card"/>
+          </t>
+        </div>
+      </div>
+    </xpath>
+  </template>
+</odoo>

@@ -1,0 +1,23 @@
+<odoo>
+  <template id="siso_base_layout" name="SISO Base Layout">
+    <t t-call="website.layout">
+      <!-- Header + Navbar -->
+      <header>
+        <div class="container-fluid bg-light d-none d-lg-block">
+          <!-- Topbar ici -->
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <!-- Navbar ici -->
+        </nav>
+      </header>
+
+      <main>
+        <t t-raw="0"/> <!-- contenu de chaque page -->
+      </main>
+
+      <footer>
+        <!-- Footer ici -->
+      </footer>
+    </t>
+  </template>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+    <menuitem id="siso_menu_root" name="SISO Portfolio"/>
+
+    <menuitem id="siso_project_menu"
+              name="Projets"
+              parent="siso_menu_root"
+              action="siso_project_action"/>
+
+    <menuitem id="siso_skill_menu"
+              name="Compétences"
+              parent="siso_menu_root"
+              action="siso_skill_action"/>
+</odoo>
