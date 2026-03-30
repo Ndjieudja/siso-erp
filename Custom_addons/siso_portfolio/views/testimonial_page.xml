@@ -1,7 +1,7 @@
 <odoo>
   <template id="siso_testimonial_page" inherit_id="siso_portfolio.siso_base_layout">
     <xpath expr="//main" position="replace">
-      <t t-call="siso_portfolio.page_header">
+      <!-- <t t-call="siso_portfolio.page_header">
         <t t-set="title">Testimonial</t>
         <t t-set="breadcrumbs">
           <t t-raw="[
@@ -10,7 +10,7 @@
             {'name':'Testimonial','url':None}
           ]"/>
         </t>
-      </t>
+      </t> -->
 
       <div class="container-xxl py-5">
         <div class="text-center mb-5">

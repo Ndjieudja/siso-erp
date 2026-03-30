@@ -38,7 +38,7 @@ from odoo import http
 from odoo.http import request
 
 class SisoPortfolio(http.Controller):
-    @http.route('/testimonial', type='http', auth='public', website=True)
+    @http.route('/portfolio', type='http', auth='public', website=True)
     def testimonial(self, **kwargs):
         testimonials = [
             {'img':'testimonial-1.jpg','name':'Client 1','profession':'Designer','text':'Excellent service!','stars':5},

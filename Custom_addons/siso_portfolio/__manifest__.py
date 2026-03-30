@@ -26,7 +26,15 @@
 
     'data': [
         # Templates QWeb
-        'views/siso_portfolio_templates.xml',
+        #'views/components/carousel.xml',
+        #'views/components/page_header.xml',
+        #'views/components/testimonial.xml',
+
+        'views/layout.xml',
+        'views/project_views.xml',
+        #'views/menu.xml',
+        'views/testimonial_page.xml',
+        'views/website_templates.xml',
         # Données initiales si besoin
         # 'data/siso_portfolio_data.xml',
     ],
