@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="siso_layout_contact" name="template_name" inherit_id="siso_portfolio.e">
+        <xpath expr="//main" position="replace">
+            
+        </xpath>
+    </template>
+
+</odoo>

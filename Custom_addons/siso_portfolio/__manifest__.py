@@ -1,14 +1,3 @@
-# -*- coding: utf-8 -*-
-####################################################################################
-#
-#    SISO WEB based on Odoo, Open Source Management Solution
-#    Copyright (C) 2023 (<https://ssolutionets.com).
-#    Martial MBE < gabrielndjieudja@gmail.com | gabrielndjieudja@ssolutionets.com >
-#    See LICENSE file for full copyright and licensing details.
-#
-####################################################################################
-
-
 {
     'name': "SISO Portfolio",
     'version': '1.0',
@@ -26,16 +15,19 @@
 
     'data': [
         # Templates QWeb
-        #'views/components/carousel.xml',
-        #'views/components/page_header.xml',
-        #'views/components/testimonial.xml',
-
+        'views/components/carousel.xml',
+        'views/components/page_header.xml',
+        'views/components/testimonial_card.xml',
         'views/layout.xml',
-        'views/project_views.xml',
-        #'views/menu.xml',
         'views/testimonial_page.xml',
-        'views/website_templates.xml',
+        'views/about_page.xml',
+        'views/services.xml',
+        # 'views/contact.xml',
+        
         # Données initiales si besoin
+        # 'views/menu.xml',
+        # 'views/website_templates.xml',
+        # 'views/projects_views.xml',
         # 'data/siso_portfolio_data.xml',
     ],
     'assets': {
@@ -56,7 +48,6 @@
             'siso_portfolio/static/lib/tempusdominus/js/moment.min.js',
             'siso_portfolio/static/lib/tempusdominus/js/moment-timezone.min.js',
             'siso_portfolio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js',
-            'siso_portfolio/static/src/js/main.js',
         ],
     },
     'installable': True,

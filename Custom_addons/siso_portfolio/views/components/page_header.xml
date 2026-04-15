@@ -2,17 +2,27 @@
   <template id="page_header">
     <div class="container-fluid page-header mb-5 py-5">
       <div class="container">
-        <h1 class="display-3 text-white mb-3"><t t-esc="title"/></h1>
-        <nav aria-label="breadcrumb">
+        <h1 class="display-3 text-white mb-3">
+          <t t-esc="title"/>
+        </h1>
+
+        <nav>
           <ol class="breadcrumb text-uppercase">
             <t t-foreach="breadcrumbs" t-as="b">
               <li class="breadcrumb-item">
-                <t t-if="b.url"><a class="text-white" t-att-href="b.url"><t t-esc="b.name"/></a></t>
-                <!-- <t t-else><span class="text-white"><t t-esc="b.name"/></span></t> -->
+                <t t-if="b['url']">
+                  <a class="text-white" t-att-href="b.get('url')">
+                    <t t-esc="b['name']"/>
+                  </a>
+                </t>
+                <t t-if="not b.get('url')">
+                  <span class="text-white"><t t-esc="b['name']"/></span>
+                </t>
               </li>
             </t>
           </ol>
         </nav>
+
       </div>
     </div>
   </template>

@@ -1,0 +1,11 @@
+<odoo>
+  <!-- Composant Carousel générique -->
+  <template id="owl_carousel">
+    <div t-attf-class="owl-carousel #{carousel_class or ''}">
+      
+      <!-- Contenu injecté -->
+      <t t-raw="0"/>
+      
+    </div>
+  </template>
+</odoo>

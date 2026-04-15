@@ -1,89 +1,18 @@
 <odoo>
+    <template id="template_advanced" name="template_name" inherit_id="website.layout">
+        <xpath expr="//main" position="inside">
+            <div class="container">
 
-    <!-- PAGE PORTFOLIO -->
-    <template id="portfolio_page" name="Portfolio">
-        <t t-call="website.layout">
-
-            <div class="container mt-5">
-
-                <div class="text-center mb-5">
-                    <h1>SISO Portfolio</h1>
-                    <p>Python | React | IA | DevOps</p>
-                </div>
-
-                <!-- SKILLS -->
-                <div class="mb-5">
-                    <h3>Compétences</h3>
-                    <t t-foreach="skills" t-as="skill">
-                        <span class="badge bg-primary m-1">
-                            <t t-esc="skill.name"/>
-                        </span>
-                    </t>
-                </div>
-
-                <!-- PROJECTS -->
-                <div class="row">
-                    <t t-foreach="projects" t-as="project">
-                        <div class="col-md-4 mb-4">
-
-                            <div class="card h-100 shadow">
-
-                                <t t-if="project.image">
-                                    <img t-att-src="'data:image/png;base64,%s' % project.image"
-                                         class="card-img-top"/>
-                                </t>
-
-                                <div class="card-body">
-                                    <h5><t t-esc="project.name"/></h5>
-                                    <p><t t-esc="project.description"/></p>
-
-                                    <a t-att-href="'/portfolio/%s' % project.id"
-                                       class="btn btn-dark">
-                                        Voir détails
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </t>
-                </div>
-
-            </div>
-
-        </t>
-    </template>
-
-    <!-- PAGE DETAIL -->
-    <template id="project_detail" name="Project Detail">
-        <t t-call="website.layout">
-
-            <div class="container mt-5">
-
-                <h1><t t-esc="project.name"/></h1>
-
-                <t t-if="project.image">
-                    <img t-att-src="'data:image/png;base64,%s' % project.image"
-                         class="img-fluid mb-3"/>
+                <t t-if="user">
+                    <h2>Bonjour <t t-esc="user.name" /></h2>
                 </t>
 
-                <p><t t-esc="project.description"/></p>
-
-                <p><strong>Technologies:</strong>
-                    <t t-esc="project.technologies"/>
-                </p>
-
-                <t t-if="project.link">
-                    <a t-att-href="project.link"
-                       class="btn btn-primary"
-                       target="_blank">
-                        Voir projet
-                    </a>
+                <t t-else="">
+                    <h2>Utilisateur anonyme</h2>
                 </t>
 
             </div>
-
-        </t>
+        </xpath>
     </template>
 
 </odoo>

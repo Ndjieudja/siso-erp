@@ -9,11 +9,11 @@
     <record id="siso_project_tree" model="ir.ui.view">
         <field name="model">siso.project</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="name"/>
                 <field name="date"/>
                 <field name="technologies"/>
-            </list>
+            </tree>
         </field>
     </record>
 

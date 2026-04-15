@@ -1,17 +1,38 @@
 <odoo>
   <template id="testimonial_card">
+    
     <div class="testimonial-item text-center">
-      <div class="testimonial-text bg-light p-4 mb-4">
-        <t t-esc="testimonial.text"/>
+
+      <div class="testimonial-text bg-light text-center p-4 mb-4">
+        <p class="mb-0">
+          <t t-esc="testimonial['text']"/>
+        </p>
       </div>
-      <img class="bg-light rounded-circle p-2 mx-auto mb-2" t-att-src="'/siso_portfolio/static/img/' + testimonial.img" style="width:80px; height:80px"/>
+
+      <!-- IMAGE (corrigée ici) -->
+      <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+           t-if="'img' in testimonial"
+           t-att-src="'/siso_portfolio/static/src/img/' + testimonial['img']"
+           style="width:80px; height:80px"/>
+
+      <!-- STARS -->
       <div class="mb-2">
-        <t t-foreach="range(testimonial.stars)" t-as="i">
+        <t t-foreach="range(testimonial['stars'])" t-as="i">
           <small class="fa fa-star text-secondary"></small>
         </t>
       </div>
-      <h5 class="mb-1"><t t-esc="testimonial.name"/></h5>
-      <p class="m-0"><t t-esc="testimonial.profession"/></p>
+
+      <!-- NAME -->
+      <h5 class="mb-1">
+        <t t-esc="testimonial['name']"/>
+      </h5>
+
+      <!-- PROFESSION -->
+      <p class="m-0">
+        <t t-esc="testimonial['profession']"/>
+      </p>
+
     </div>
+
   </template>
 </odoo>
