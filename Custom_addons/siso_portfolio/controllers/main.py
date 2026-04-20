@@ -56,7 +56,7 @@ class SisoPortfolio(http.Controller):
          
     @http.route('/services', type='http', auth='public', website=True)
     def services(self, **kwargs):
-         return request.render('siso_portfolio.siso_services_page', {
+         return request.render('siso_portfolio.siso_service_page', {
         })
          
     @http.route('/contact', type='http', auth='public', website=True)

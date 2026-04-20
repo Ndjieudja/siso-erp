@@ -5,6 +5,21 @@
         <template id="siso_portfolio.siso_about_page" inherit_id="siso_portfolio.siso_base_layout_about">
             <xpath expr="//main" position="replace">
                 <main>
+
+                    <div class="container-fluid page-header-about mb-5 py-5">
+                        <div class="container">
+                            <h1 class="display-3 text-white mb-3 animated slideInDown">A propos de nous</h1>
+                            <nav aria-label="breadcrumb animated slideInDown">
+                                <ol class="breadcrumb text-uppercase">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">A propos</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Page Header End -->
+
                     <!-- Service Start -->
                     <div class="container-xxl py-5">
                         <div class="container">
@@ -13,12 +28,12 @@
                                     data-wow-delay="0.1s">
                                     <div class="overflow-hidden">
                                         <img class="img-fluid w-100 h-100"
-                                            src="/siso_portoflio/static/src/img/service-1.jpg"
+                                            src="/siso_portfolio/static/src/img/service-1.jpg"
                                             alt="" />
                                     </div>
                                     <div
                                         class="d-flex align-items-center justify-content-between bg-light p-4">
-                                        <h5 class="text-truncate me-3 mb-0">Residential Plumbing</h5>
+                                        <h5 class="text-truncate me-3 mb-0">Maintenance a domicil</h5>
                                         <a
                                             class="btn btn-square btn-outline-primary border-2 border-white flex-shrink-0"
                                             href="">
@@ -30,7 +45,7 @@
                                     data-wow-delay="0.3s">
                                     <div class="overflow-hidden">
                                         <img class="img-fluid w-100 h-100"
-                                            src="/siso_portoflio/static/src/img/service-2.jpg"
+                                            src="/siso_portfolio/static/src/img/service-2.jpg"
                                             alt="" />
                                     </div>
                                     <div
@@ -47,7 +62,7 @@
                                     data-wow-delay="0.5s">
                                     <div class="overflow-hidden">
                                         <img class="img-fluid w-100 h-100"
-                                            src="/siso_portoflio/static/src/img/service-3.jpg"
+                                            src="/siso_portfolio/static/src/img/service-3.jpg"
                                             alt="" />
                                     </div>
                                     <div
@@ -71,23 +86,18 @@
                         <div class="container">
                             <div class="row g-5">
                                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <h6 class="text-secondary text-uppercase">About Us</h6>
-                                    <h1 class="mb-4">We Are Trusted Plumbing Company Since 1990</h1>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor
-                                        diam
-                                        ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                                        lorem et sit, sed stet lorem sit clita duo justo magna
-                                        dolore
-                                        erat amet</p>
+                                    <h6 class="text-secondary text-uppercase">A propos</h6>
+                                    <h1 class="mb-4">Une entreprise IT de confiance à votre service</h1>
+                                    <p class="mb-4">Simple Solution est une entreprise spécialisée dans les services informatiques et les solutions technologiques. 
+                                        Nous accompagnons les entreprises et les particuliers dans le développement de logiciels, 
+                                        la cybersécurité et la fourniture de matériel informatique, 
+                                        en proposant des solutions fiables et adaptées à leurs besoins.</p>
                                     <p class="fw-medium text-primary">
-                                        <i class="fa fa-check text-success me-3"></i>Residential
-                                        commercial plumbing</p>
+                                        <i class="fa fa-check text-success me-3"></i>Vente-Livraison materiel</p>
                                     <p class="fw-medium text-primary">
-                                        <i class="fa fa-check text-success me-3"></i>Quality
-                                        services at affordable prices</p>
+                                        <i class="fa fa-check text-success me-3"></i>Qualite de service Impecable</p>
                                     <p class="fw-medium text-primary">
-                                        <i class="fa fa-check text-success me-3"></i>Immediate 24/ 7
-                                        emergency services</p>
+                                        <i class="fa fa-check text-success me-3"></i>Service promt</p>
                                     <div class="bg-primary d-flex align-items-center p-4 mt-5">
                                         <div
                                             class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
@@ -95,8 +105,8 @@
                                             <i class="fa fa-phone-alt fa-2x text-primary"></i>
                                         </div>
                                         <div class="ms-3">
-                                            <p class="fs-5 fw-medium mb-2 text-white">Emergency 24/7</p>
-                                            <h3 class="m-0 text-secondary">+012 345 6789</h3>
+                                            <p class="fs-5 fw-medium mb-2 text-white">Service rapide</p>
+                                            <h3 class="m-0 text-secondary">+237 695 15 50 66</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -104,12 +114,12 @@
                                     <div class="position-relative h-100 wow fadeInUp"
                                         data-wow-delay="0.5s">
                                         <img class="position-absolute img-fluid w-100 h-100"
-                                            src="/siso_portoflio/static/src/img/about-1.jpg"
+                                            src="/siso_portfolio/static/src/img/about-1.jpg"
                                             style="object-fit: cover; padding: 0 0 50px 100px;"
                                             alt="" />
                                         <img
                                             class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50"
-                                            src="/siso_portoflio/static/src/img/about-2.jpg"
+                                            src="/siso_portfolio/static/src/img/about-2.jpg"
                                             style="object-fit: cover;" alt="" />
                                     </div>
                                 </div>
@@ -157,15 +167,15 @@
                     <div class="container-xxl py-5">
                         <div class="container">
                             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                                <h6 class="text-secondary text-uppercase">Our Technicians</h6>
-                                <h1 class="mb-5">Our Expert Technicians</h1>
+                                <h6 class="text-secondary text-uppercase">Nos Partenaire</h6>
+                                <h1 class="mb-5">Nos Techniciens</h1>
                             </div>
                             <div class="row g-4">
                                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="team-item">
                                         <div class="position-relative overflow-hidden">
                                             <img class="img-fluid"
-                                                src="/siso_portoflio/static/src/img/team-1.jpg"
+                                                src="/siso_portfolio/static/src/img/team-1.jpg"
                                                 alt="" />
                                         </div>
                                         <div class="team-text">
@@ -191,7 +201,7 @@
                                     <div class="team-item">
                                         <div class="position-relative overflow-hidden">
                                             <img class="img-fluid"
-                                                src="/siso_portoflio/static/src/img/team-2.jpg"
+                                                src="/siso_portfolio/static/src/img/team-2.jpg"
                                                 alt="" />
                                         </div>
                                         <div class="team-text">
@@ -217,7 +227,7 @@
                                     <div class="team-item">
                                         <div class="position-relative overflow-hidden">
                                             <img class="img-fluid"
-                                                src="/siso_portoflio/static/src/img/team-3.jpg"
+                                                src="/siso_portfolio/static/src/img/team-3.jpg"
                                                 alt="" />
                                         </div>
                                         <div class="team-text">
@@ -243,7 +253,7 @@
                                     <div class="team-item">
                                         <div class="position-relative overflow-hidden">
                                             <img class="img-fluid"
-                                                src="/siso_portoflio/static/src/img/team-4.jpg"
+                                                src="/siso_portfolio/static/src/img/team-4.jpg"
                                                 alt="" />
                                         </div>
                                         <div class="team-text">

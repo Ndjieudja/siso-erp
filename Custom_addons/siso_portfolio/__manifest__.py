@@ -22,7 +22,7 @@
         'views/testimonial_page.xml',
         'views/about_page.xml',
         'views/services.xml',
-        # 'views/contact.xml',
+        'views/contact.xml',
         
         # Données initiales si besoin
         # 'views/menu.xml',
