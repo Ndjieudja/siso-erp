@@ -251,7 +251,7 @@
 }
 
 .page-header-services {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/siso_portfolio/static/src/img/Service-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/siso_portfolio/static/src/img/service-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -611,3 +611,38 @@
 .footer .copyright a {
     color: var(--light);
 }
+
+.header-carousel-home .owl-carousel-item {
+    height: 100vh;
+    min-height: 600px;
+}
+
+.header-carousel-home .owl-carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Animation */
+.anim-text {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.8s ease;
+}
+
+/* Seulement les slides NON actifs sont cachés */
+.owl-item:not(.active) .anim-text {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+

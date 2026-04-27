@@ -2,7 +2,8 @@
 
 <odoo>
     <data>
-        <template id="siso_portfolio.siso_service_page" inherit_id="siso_portfolio.siso_base_layout_contact">
+        <template id="siso_portfolio.siso_service_page"
+            inherit_id="siso_portfolio.siso_base_layout_services">
             <xpath expr="//main" position="replace">
                 <main>
 
@@ -12,9 +13,14 @@
                             <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
                             <nav aria-label="breadcrumb animated slideInDown">
                                 <ol class="breadcrumb text-uppercase">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                                    <li class="breadcrumb-item">
+                                        <a class="text-white" href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a class="text-white" href="#">Pages</a>
+                                    </li>
+                                    <li class="breadcrumb-item text-white active"
+                                        aria-current="page">Services</li>
                                 </ol>
                             </nav>
                         </div>
@@ -39,100 +45,109 @@
                                         <h1 class="mb-5">Explorez Nos Services</h1>
                                     </div>
                                     <div
-                                        class="owl-carousel service-carousel position-relative wow fadeInUp"
+                                        class="owl-carousel service-carousel position-relative"
                                         data-wow-delay="0.1s">
+
+                                        <!-- Développement Web -->
                                         <div class="bg-light p-4">
                                             <div
                                                 class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                                                 style="width: 75px; height: 75px;">
-                                                <i class="fa fa-water fa-2x text-primary"></i>
+                                                <i class="fa fa-code fa-2x text-primary"></i>
                                             </div>
-                                            <h4 class="mb-3">Drain Repair</h4>
-                                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum
-                                                diam
-                                                lorem diam justo.</p>
+                                            <h4 class="mb-3">Développement Web</h4>
+                                            <p>Création de sites web et applications sur mesure
+                                                adaptés à vos besoins.</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Quality
-                                                Service</p>
+                                                <i class="fa fa-check text-success me-2"></i>Solutions
+                                                personnalisées</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Customer
-                                                Satisfaction</p>
+                                                <i class="fa fa-check text-success me-2"></i>Technologies
+                                                modernes</p>
                                             <p class="text-primary fw-medium">
                                                 <i class="fa fa-check text-success me-2"></i>Support
-                                                24/7</p>
-                                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read
-                                                More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+                                                continu</p>
+                                            <a href="" class="btn bg-white text-primary w-100 mt-2">
+                                                En savoir plus<i
+                                                    class="fa fa-arrow-right text-secondary ms-2"></i>
                                             </a>
                                         </div>
+
+                                        <!-- Cybersécurité -->
                                         <div class="bg-light p-4">
                                             <div
                                                 class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                                                 style="width: 75px; height: 75px;">
-                                                <i class="fa fa-toilet fa-2x text-primary"></i>
+                                                <i class="fa fa-shield-alt fa-2x text-primary"></i>
                                             </div>
-                                            <h4 class="mb-3">Toilet Pipe Repair</h4>
-                                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum
-                                                diam
-                                                lorem diam justo.</p>
+                                            <h4 class="mb-3">Cybersécurité</h4>
+                                            <p>Protection de vos systèmes et données contre les
+                                                menaces informatiques.</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Quality
-                                                Service</p>
+                                                <i class="fa fa-check text-success me-2"></i>Audit
+                                                de sécurité</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Customer
-                                                Satisfaction</p>
+                                                <i class="fa fa-check text-success me-2"></i>Surveillance
+                                                OSINT</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Support
-                                                24/7</p>
-                                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read
-                                                More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+                                                <i class="fa fa-check text-success me-2"></i>Protection
+                                                avancée</p>
+                                            <a href="" class="btn bg-white text-primary w-100 mt-2">
+                                                En savoir plus<i
+                                                    class="fa fa-arrow-right text-secondary ms-2"></i>
                                             </a>
                                         </div>
+
+                                        <!-- Automatisation & IA -->
                                         <div class="bg-light p-4">
                                             <div
                                                 class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                                                 style="width: 75px; height: 75px;">
-                                                <i class="fa fa-shower fa-2x text-primary"></i>
+                                                <i class="fa fa-robot fa-2x text-primary"></i>
                                             </div>
-                                            <h4 class="mb-3">Sewer Line Repair</h4>
-                                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum
-                                                diam
-                                                lorem diam justo.</p>
+                                            <h4 class="mb-3">Automatisation-IA</h4>
+                                            <p>Optimisez vos processus grâce à des solutions
+                                                intelligentes et automatisées.</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Quality
-                                                Service</p>
+                                                <i class="fa fa-check text-success me-2"></i>Bots
+                                                WhatsApp</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Customer
-                                                Satisfaction</p>
+                                                <i class="fa fa-check text-success me-2"></i>Scripts
+                                                automatisés</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Support
-                                                24/7</p>
-                                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read
-                                                More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+                                                <i class="fa fa-check text-success me-2"></i>Intégration
+                                                IA</p>
+                                            <a href="" class="btn bg-white text-primary w-100 mt-2">
+                                                En savoir plus<i
+                                                    class="fa fa-arrow-right text-secondary ms-2"></i>
                                             </a>
                                         </div>
+
+                                        <!-- Vente & Maintenance -->
                                         <div class="bg-light p-4">
                                             <div
                                                 class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                                                 style="width: 75px; height: 75px;">
-                                                <i class="fa fa-tint fa-2x text-primary"></i>
+                                                <i class="fa fa-laptop fa-2x text-primary"></i>
                                             </div>
-                                            <h4 class="mb-3">Water Heater Repair</h4>
-                                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum
-                                                diam
-                                                lorem diam justo.</p>
+                                            <h4 class="mb-3">Matériel, Maintenance</h4>
+                                            <p>Fourniture, installation et maintenance de matériel
+                                                informatique.</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Quality
-                                                Service</p>
+                                                <i class="fa fa-check text-success me-2"></i>Vente
+                                                d’équipements</p>
                                             <p class="text-primary fw-medium">
-                                                <i class="fa fa-check text-success me-2"></i>Customer
-                                                Satisfaction</p>
+                                                <i class="fa fa-check text-success me-2"></i>Installation
+                                                -configuration</p>
                                             <p class="text-primary fw-medium">
                                                 <i class="fa fa-check text-success me-2"></i>Support
-                                                24/7</p>
-                                            <a href="" class="btn bg-white text-primary w-100 mt-2">Read
-                                                More<i class="fa fa-arrow-right text-secondary ms-2"></i>
+                                                technique 24/7</p>
+                                            <a href="" class="btn bg-white text-primary w-100 mt-2">
+                                                En savoir plus<i
+                                                    class="fa fa-arrow-right text-secondary ms-2"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +180,7 @@
                                             <!-- 16:9 aspect ratio -->
                                             <div class="ratio ratio-16x9">
                                                 <iframe class="embed-responsive-item" src=""
-                                                      id="video"
+                                                    id="video"
                                                     allowscriptaccess="always" allow="autoplay"></iframe>
                                             </div>
                                         </div>
@@ -246,7 +261,8 @@
                                 data-wow-delay="0.1s">
                                 <div class="testimonial-item text-center">
                                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                                        <p class="mb-0">Votre partenaire de confiance pour des solutions IT innovantes</p>
+                                        <p class="mb-0">Votre partenaire de confiance pour des
+                                            solutions IT innovantes</p>
                                     </div>
                                     <img class="bg-light rounded-circle p-2 mx-auto mb-2"
                                         src="/siso_portfolio/static/src/img/testimonial-1.jpg"
@@ -263,7 +279,8 @@
                                 </div>
                                 <div class="testimonial-item text-center">
                                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                                        <p class="mb-0">Nous sommes une entreprise informatique de confiance</p>
+                                        <p class="mb-0">Nous sommes une entreprise informatique de
+                                            confiance</p>
                                     </div>
                                     <img class="bg-light rounded-circle p-2 mx-auto mb-2"
                                         src="/siso_portfolio/static/src/img/testimonial-2.jpg"
@@ -321,7 +338,7 @@
                     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top">
                         <i class="bi bi-arrow-up"></i>
                     </a>
-                
+
                 </main>
             </xpath>
         </template>

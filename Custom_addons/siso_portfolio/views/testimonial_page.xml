@@ -5,59 +5,88 @@
       <xpath expr="//main" position="replace">
         <div>
 
-            <!-- Page Header Start -->
-          <div class="container-fluid page-header-home mb-5 py-5">
-              <div class="container">
-                  <h1 class="display-3 text-white mb-3 animated slideInDown">Presentation</h1>
-                  <nav aria-label="breadcrumb animated slideInDown">
-                      <ol class="breadcrumb text-uppercase">
-                          <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                          <li class="breadcrumb-item text-white active" aria-current="page">Présentation</li>
-                      </ol>
-                  </nav>
-              </div>
-          </div>
+          <!-- Page Header Start -->
+          <!-- <div class="container-fluid page-header-home mb-5 py-5">
+            <div class="container">
+              <h1 class="display-3 text-white mb-3 animated slideInDown">Presentation</h1>
+              <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase">
+                  <li class="breadcrumb-item">
+                    <a class="text-white" href="#">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="text-white" href="#">Pages</a>
+                  </li>
+                  <li class="breadcrumb-item text-white active" aria-current="page">Présentation</li>
+                </ol>
+              </nav>
+            </div>
+          </div> -->
           <!-- Page Header End -->
 
           <!-- Carousel Start -->
           <div class="container-fluid p-0 mb-5">
-            <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel header-carousel-home position-relative">
+
+              <!-- Slide 1 -->
               <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="/siso_portfolio/static/src/img/carousel-1.jpg" alt="" />
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                  style="background: rgba(0, 0, 0, .4);">
+                <img class="img-fluid" src="/siso_portfolio/static/src/img/carousel-1.jpg" />
+                <div class="overlay d-flex align-items-center">
                   <div class="container">
-                    <div class="row justify-content-start">
-                      <div class="col-10 col-lg-8">
-                        <h5 class="text-white text-uppercase mb-3 animated slideInDown">Services de maintenance prestige</h5>
-                        <h1 class="display-3 text-white animated slideInDown mb-4">Efficacite des serivices</h1>
-                        <p class="fs-5 fw-medium text-white mb-4 pb-2">Votre solution technologique fiable</p>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">PLus</a>
-                        <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Laisse un avis</a>
-                      </div>
+                    <div class="col-10 col-lg-8">
+
+                      <h5 class="text-white text-uppercase mb-3 anim-text">
+                        Services informatiques professionnels
+                      </h5>
+
+                      <h1 class="display-3 text-white mb-4 anim-text">
+                        Des solutions digitales performantes
+                      </h1>
+
+                      <p class="fs-5 fw-medium text-white mb-4 anim-text">
+                        Votre partenaire IT de confiance
+                      </p>
+
+                      <a href="#" class="btn btn-primary py-3 px-5 me-3 anim-text">
+                        En savoir plus
+                      </a>
+
+                      <a href="#" class="btn btn-secondary py-3 px-5 anim-text">
+                        Nous contacter
+                      </a>
+
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Slide 2 -->
               <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="/siso_portfolio/static/src/img/carousel-2.jpg" alt="" />
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                  style="background: rgba(0, 0, 0, .4);">
+                <img class="img-fluid" src="/siso_portfolio/static/src/img/carousel-2.jpg" />
+                <div class="overlay d-flex align-items-center">
                   <div class="container">
-                    <div class="row justify-content-start">
-                      <div class="col-10 col-lg-8">
-                        <h5 class="text-white text-uppercase mb-3 animated slideInDown">Plumbing
-                          Repairing Services</h5>
-                        <h1 class="display-3 text-white animated slideInDown mb-4">Efficient
-                          Commercial
-                          Plumbing Services</h1>
-                        <p class="fs-5 fw-medium text-white mb-4 pb-2">Des solutions IT adaptées à vos besoins</p>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
-                          More</a>
-                        <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Free
-                          Quote</a>
-                      </div>
+                    <div class="col-10 col-lg-8">
+
+                      <h5 class="text-white text-uppercase mb-3 anim-text">
+                        Développement - Cybersécurité
+                      </h5>
+
+                      <h1 class="display-3 text-white mb-4 anim-text">
+                        Sécurité et innovation pour votre entreprise
+                      </h1>
+
+                      <p class="fs-5 fw-medium text-white mb-4 anim-text">
+                        Des solutions IT adaptées à vos besoins
+                      </p>
+
+                      <a href="#" class="btn btn-primary py-3 px-5 me-3 anim-text">
+                        Découvrir
+                      </a>
+
+                      <a href="#" class="btn btn-secondary py-3 px-5 anim-text">
+                        Demander un devis
+                      </a>
+
                     </div>
                   </div>
                 </div>
@@ -73,7 +102,8 @@
               <div class="row g-4">
                 <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
                   <div class="overflow-hidden">
-                    <img class="img-fluid w-100 h-100" src="/siso_portfolio/static/src/img/service-1.jpg" alt="" />
+                    <img class="img-fluid w-100 h-100"
+                      src="/siso_portfolio/static/src/img/service-1.jpg" alt="" />
                   </div>
                   <div class="d-flex align-items-center justify-content-between bg-light p-4">
                     <h5 class="text-truncate me-3 mb-0">Maintenance à domicil</h5>
@@ -86,7 +116,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.3s">
                   <div class="overflow-hidden">
-                    <img class="img-fluid w-100 h-100" src="/siso_portfolio/static/src/img/service-2.jpg" alt="" />
+                    <img class="img-fluid w-100 h-100"
+                      src="/siso_portfolio/static/src/img/service-2.jpg" alt="" />
                   </div>
                   <div class="d-flex align-items-center justify-content-between bg-light p-4">
                     <h5 class="text-truncate me-3 mb-0">Vente Matériels</h5>
@@ -99,7 +130,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.5s">
                   <div class="overflow-hidden">
-                    <img class="img-fluid w-100 h-100" src="/siso_portfolio/static/src/img/service-3.jpg" alt="" />
+                    <img class="img-fluid w-100 h-100"
+                      src="/siso_portfolio/static/src/img/service-3.jpg" alt="" />
                   </div>
                   <div class="d-flex align-items-center justify-content-between bg-light p-4">
                     <h5 class="text-truncate me-3 mb-0">Services express</h5>
@@ -123,13 +155,17 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                   <h6 class="text-secondary text-uppercase">A propos</h6>
                   <h1 class="mb-4">Une entreprise IT de confiance à votre service</h1>
-                  <p class="mb-4">Simple Solution est une entreprise spécialisée dans les services informatiques et les solutions technologiques. 
-                    Nous accompagnons les entreprises et les particuliers dans le développement de logiciels, 
-                    la cybersécurité et la fourniture de matériel informatique, en proposant des solutions fiables et adaptées à leurs besoins.</p>
+                  <p class="mb-4">Simple Solution est une entreprise spécialisée dans les services
+                    informatiques et les solutions technologiques.
+                    Nous accompagnons les entreprises et les particuliers dans le développement de
+                    logiciels,
+                    la cybersécurité et la fourniture de matériel informatique, en proposant des
+                    solutions fiables et adaptées à leurs besoins.</p>
                   <p class="fw-medium text-primary">
                     <i class="fa fa-check text-success me-3"></i>Services à Domicil</p>
                   <p class="fw-medium text-primary">
-                    <i class="fa fa-check text-success me-3"></i>Qualité de services à des prix abordable</p>
+                    <i class="fa fa-check text-success me-3"></i>Qualité de services à des prix
+                    abordable</p>
                   <p class="fw-medium text-primary">
                     <i class="fa fa-check text-success me-3"></i>services Rapide</p>
                   <div class="bg-primary d-flex align-items-center p-4 mt-5">
@@ -146,11 +182,13 @@
                 </div>
                 <div class="col-lg-6 pt-4" style="min-height: 500px;">
                   <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="position-absolute img-fluid w-100 h-100" src="/siso_portfolio/static/src/img/about-1.jpg"
+                    <img class="position-absolute img-fluid w-100 h-100"
+                      src="/siso_portfolio/static/src/img/about-1.jpg"
                       style="object-fit: cover; padding: 0 0 50px 100px;" alt="" />
                     <img
                       class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50"
-                      src="/siso_portfolio/static/src/img/about-2.jpg" style="object-fit: cover;" alt="" />
+                      src="/siso_portfolio/static/src/img/about-2.jpg" style="object-fit: cover;"
+                      alt="" />
                   </div>
                 </div>
               </div>
@@ -193,95 +231,107 @@
           <div class="container-fluid py-5 px-4 px-lg-0">
             <div class="row g-0">
               <div class="col-lg-3 d-none d-lg-flex">
-                <div class="d-flex align-items-center justify-content-center bg-primary w-100 h-100">
-                  <h1 class="display-3 text-white m-0" style="transform: rotate(-90deg);">15 Years
-                    Experience</h1>
+                <div
+                  class="d-flex align-items-center justify-content-center bg-primary w-100 h-100">
+                  <h1 class="display-3 text-white m-0"
+                    style="transform: rotate(-90deg);">Experience</h1>
                 </div>
               </div>
               <div class="col-md-12 col-lg-9">
                 <div class="ms-lg-5 ps-lg-5">
-                  <div class="text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">Nos Services</h6>
-                    <h1 class="mb-5">Explorez nos services</h1>
-                  </div>
-                  <div class="owl-carousel service-carousel position-relative wow fadeInUp"
+                  <div class="text-center text-lg-start wow fadeInUp"
                     data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">Nos Services</h6>
+                    <h1 class="mb-5">Explorez Nos Services</h1>
+                  </div>
+                  <div
+                    class="owl-carousel service-carousel position-relative"
+                    data-wow-delay="0.1s">
+
+                    <!-- Développement Web -->
                     <div class="bg-light p-4">
                       <div
                         class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                         style="width: 75px; height: 75px;">
-                        <i class="fa fa-water fa-2x text-primary"></i>
+                        <i class="fa fa-code fa-2x text-primary"></i>
                       </div>
-                      <h4 class="mb-3">Drain Repair</h4>
-                      <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam
-                        justo.</p>
+                      <h4 class="mb-3">Développement Web</h4>
+                      <p>Création de sites web et applications sur mesure
+                        adaptés à vos besoins.</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Quality Service</p>
+                        <i class="fa fa-check text-success me-2"></i>Solutions personnalisées</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
+                        <i class="fa fa-check text-success me-2"></i>Technologies modernes</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                      <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i
+                        <i class="fa fa-check text-success me-2"></i>Support continu</p>
+                      <a href="" class="btn bg-white text-primary w-100 mt-2"> En savoir plus<i
                           class="fa fa-arrow-right text-secondary ms-2"></i>
                       </a>
                     </div>
+
+                    <!-- Cybersécurité -->
                     <div class="bg-light p-4">
                       <div
                         class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                         style="width: 75px; height: 75px;">
-                        <i class="fa fa-toilet fa-2x text-primary"></i>
+                        <i class="fa fa-shield-alt fa-2x text-primary"></i>
                       </div>
-                      <h4 class="mb-3">Toilet Pipe Repair</h4>
-                      <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam
-                        justo.</p>
+                      <h4 class="mb-3">Cybersécurité</h4>
+                      <p>Protection de vos systèmes et données contre les
+                        menaces informatiques.</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Quality Service</p>
+                        <i class="fa fa-check text-success me-2"></i>Audit de sécurité</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
+                        <i class="fa fa-check text-success me-2"></i>Surveillance OSINT</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                      <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i
+                        <i class="fa fa-check text-success me-2"></i>Protection avancée</p>
+                      <a href="" class="btn bg-white text-primary w-100 mt-2"> En savoir plus<i
                           class="fa fa-arrow-right text-secondary ms-2"></i>
                       </a>
                     </div>
+
+                    <!-- Automatisation & IA -->
                     <div class="bg-light p-4">
                       <div
                         class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                         style="width: 75px; height: 75px;">
-                        <i class="fa fa-shower fa-2x text-primary"></i>
+                        <i class="fa fa-robot fa-2x text-primary"></i>
                       </div>
-                      <h4 class="mb-3">Sewer Line Repair</h4>
-                      <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam
-                        justo.</p>
+                      <h4 class="mb-3">Automatisation-IA</h4>
+                      <p>Optimisez vos processus grâce à des solutions
+                        intelligentes et automatisées.</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Quality Service</p>
+                        <i class="fa fa-check text-success me-2"></i>Bots WhatsApp</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
+                        <i class="fa fa-check text-success me-2"></i>Scripts automatisés</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                      <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i
+                        <i class="fa fa-check text-success me-2"></i>Intégration IA</p>
+                      <a href="" class="btn bg-white text-primary w-100 mt-2"> En savoir plus<i
                           class="fa fa-arrow-right text-secondary ms-2"></i>
                       </a>
                     </div>
+
+                    <!-- Vente & Maintenance -->
                     <div class="bg-light p-4">
                       <div
                         class="d-flex align-items-center justify-content-center border border-5 border-white mb-4"
                         style="width: 75px; height: 75px;">
-                        <i class="fa fa-tint fa-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-2x text-primary"></i>
                       </div>
-                      <h4 class="mb-3">Water Heater Repair</h4>
-                      <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam
-                        justo.</p>
+                      <h4 class="mb-3">Matériel, Maintenance</h4>
+                      <p>Fourniture, installation et maintenance de matériel
+                        informatique.</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Quality Service</p>
+                        <i class="fa fa-check text-success me-2"></i>Vente d’équipements</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Customer Satisfaction</p>
+                        <i class="fa fa-check text-success me-2"></i>Installation -configuration</p>
                       <p class="text-primary fw-medium">
-                        <i class="fa fa-check text-success me-2"></i>Support 24/7</p>
-                      <a href="" class="btn bg-white text-primary w-100 mt-2">Read More<i
+                        <i class="fa fa-check text-success me-2"></i>Support technique 24/7</p>
+                      <a href="" class="btn bg-white text-primary w-100 mt-2"> En savoir plus<i
                           class="fa fa-arrow-right text-secondary ms-2"></i>
                       </a>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -294,7 +344,8 @@
           <div class="container-fluid my-5 px-0">
             <div class="video wow fadeInUp" data-wow-delay="0.1s">
               <button type="button" class="btn-play" data-bs-toggle="modal"
-                data-src="/siso_portfoliohttps://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                data-src="/siso_portfoliohttps://www.youtube.com/embed/DWRcNpR6Kdc"
+                data-bs-target="#videoModal">
                 <span></span>
               </button>
 
@@ -491,7 +542,8 @@
                   <div class="testimonial-text bg-light text-center p-4 mb-4">
                     <p class="mb-0"></p>
                   </div>
-                  <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/siso_portfolioimg/testimonial-1.jpg"
+                  <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                    src="/siso_portfolioimg/testimonial-1.jpg"
                     style="width: 80px; height: 80px;" />
                   <div class="mb-2">
                     <small class="fa fa-star text-secondary"></small>
@@ -507,7 +559,8 @@
                   <div class="testimonial-text bg-light text-center p-4 mb-4">
                     <p class="mb-0">Sécurité, performance et innovation</p>
                   </div>
-                  <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/siso_portfolioimg/testimonial-2.jpg"
+                  <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                    src="/siso_portfolioimg/testimonial-2.jpg"
                     style="width: 80px; height: 80px;" />
                   <div class="mb-2">
                     <small class="fa fa-star text-secondary"></small>
@@ -523,7 +576,8 @@
                   <div class="testimonial-text bg-light text-center p-4 mb-4">
                     <p class="mb-0">Votre allié en transformation digitale</p>
                   </div>
-                  <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/siso_portfolioimg/testimonial-3.jpg"
+                  <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                    src="/siso_portfolioimg/testimonial-3.jpg"
                     style="width: 80px; height: 80px;" />
                   <div class="mb-2">
                     <small class="fa fa-star text-secondary"></small>
@@ -539,7 +593,8 @@
                   <div class="testimonial-text bg-light text-center p-4 mb-4">
                     <p class="mb-0">Innovation et expertise au service du digital</p>
                   </div>
-                  <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="/siso_portfolioimg/testimonial-4.jpg"
+                  <img class="bg-light rounded-circle p-2 mx-auto mb-2"
+                    src="/siso_portfolioimg/testimonial-4.jpg"
                     style="width: 80px; height: 80px;" />
                   <div class="mb-2">
                     <small class="fa fa-star text-secondary"></small>

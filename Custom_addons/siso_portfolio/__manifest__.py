@@ -48,6 +48,8 @@
             'siso_portfolio/static/lib/tempusdominus/js/moment.min.js',
             'siso_portfolio/static/lib/tempusdominus/js/moment-timezone.min.js',
             'siso_portfolio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js',
+            'siso_portfolio/static/src/js/services_carosel.js',
+            'siso_portfolio/static/src/js/carousel.js',
         ],
     },
     'installable': True,
