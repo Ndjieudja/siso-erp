@@ -42,7 +42,7 @@ class SisoPortfolio(http.Controller):
                 {'name': 'Portfolio', 'url': None},
             ]
         
-        title = "mon porfolio"
+        title = "Simple Solution"
         return request.render('siso_portfolio.siso_testimonial_page', {
             'testimonials': testimonials,
             'breadcrumbs': breadcrumbs,
